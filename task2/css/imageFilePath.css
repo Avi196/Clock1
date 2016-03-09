@@ -1,0 +1,7 @@
+input, label {
+    display:block;
+}
+
+.valBlock {
+    float:left;margin-right:20px;
+}

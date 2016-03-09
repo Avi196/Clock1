@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8">
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>Task2</title>
+    <link rel="stylesheet" type="text/css" href="css/imageFilePath.css">
+    <script type="text/javascript" language="javascript" src="javascript/imageFilePath.js"></script>
+</head>
+<body>
+<div>Please input values for</div>
+<div class="valBlock">
+    <label for="zoomlevel">Zoom level (0 ... 18)</label>
+    <input id="zoomlevel" type="text" value="" >
+</div>
+<div class="valBlock">
+    <label for="latitude">Latitude (-90 > ... < 90)</label>
+    <input id="latitude" type="text" value="" >
+</div>
+<div class="valBlock">
+    <label for="longitude">Longitude (-180 ... 180)</label>
+    <input id="longitude" type="text" value="" >
+</div>
+
+<button type="button" onclick="getImageFilePath(document.getElementById('zoomlevel').value, document.getElementById('latitude').value, document.getElementById('longitude').value)">Return file path</button>
+
+</body>
+</html>
